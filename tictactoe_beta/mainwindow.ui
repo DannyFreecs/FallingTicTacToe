@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>739</width>
+    <height>604</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGraphicsView" name="gv"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>739</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuJ_t_k">
+    <property name="title">
+     <string>&amp;Játék</string>
+    </property>
+    <addaction name="actionUjJatek"/>
+    <addaction name="actionJatekBetoltes"/>
+    <addaction name="actionJatekMentes"/>
+    <addaction name="separator"/>
+    <addaction name="actionKilepes"/>
+   </widget>
+   <addaction name="menuJ_t_k"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionUjJatek">
+   <property name="text">
+    <string>&amp;Új játék</string>
+   </property>
+   <property name="toolTip">
+    <string>Új játék indítása</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionJatekMentes">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Játék &amp;mentése</string>
+   </property>
+   <property name="toolTip">
+    <string>Játék mentése fájlba</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionKilepes">
+   <property name="text">
+    <string>&amp;Kilépés</string>
+   </property>
+   <property name="toolTip">
+    <string>Kilépés a játékból</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionJatekBetoltes">
+   <property name="text">
+    <string>&amp;Játék betöltése</string>
+   </property>
+   <property name="toolTip">
+    <string>Játék betöltése fájl mentésből</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
